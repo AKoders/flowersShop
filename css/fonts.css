@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-style:normal; 
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: "Ermilov-Bold";
+    src: url("../fonts/Ermilov-bold.otf");
+    font-style:normal; 
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: "OldClassic";
+    src: url("../fonts/OldClassic.ttf");
+    font-style:normal; 
+    font-weight:normal;
+}
+

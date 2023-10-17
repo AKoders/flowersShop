@@ -1,0 +1,296 @@
+html,
+body {
+    height: 100%;
+
+}
+
+#container {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+#header {
+    width: 100%;
+    height: 902px;
+    background: url('../img/headerBackground.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+}
+
+#nav {
+    width: 90%;
+    height: 75px;
+    display: inline-block;
+    background-color: #515151;
+    border-radius: 50px;
+    position: relative;
+    margin: 2% 5% 0 5%;
+}
+
+.navItem {
+
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+.navItem li {
+    height: 75px;
+    display: inline-block;
+    padding: 0 50px 0 50px;
+    transition: 1s;
+
+}
+
+.navItem a {
+
+    text-decoration: none;
+    font-family: 'Montserrat-Bold';
+    font-size: 10pt;
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.navItem li:hover {
+    height: 75px;
+    background-color: #ff040465;
+    transition: 1s;
+
+}
+
+#logo {
+    display: inline-block;
+    margin: 0 10px 0 70px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#logoSite p {
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#logoSite {
+    display: inline-block;
+
+    width: 150px;
+    height: 60px;
+    margin: -50px 0 0 2%;
+}
+
+#headerDesriptionText {
+    margin: 185px 0 0 5%;
+}
+
+#headerTitleText h1 {
+    font-family: "Ermilov-Bold";
+    color: #515151;
+    font-size: 45pt;
+}
+
+#headerTitleText p {
+    font-family: "OldClassic";
+    color: #515151;
+    font-size: 30pt;
+    margin: 45px 0 0 0;
+}
+
+#headerbodyText {
+    width: 600px;
+    margin: 30px 0 0 0;
+}
+
+#headerbodyText p {
+    text-align: left;
+    color: #515151;
+    font-size: 30pt;
+}
+
+#articleBtn {
+    margin: 45px 0 0 0;
+}
+
+#purchase {
+    display: inline-block;
+    width: 160px;
+    text-decoration: none;
+    background-color: #e08e9c;
+    color: #ffffff;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    transition: 2s;
+}
+
+#purchase:hover {
+    background-color: #51515100;
+    color: #515151;
+    transition: 2s;
+}
+
+#readMoreBtn {
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    color: #515151;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 0 0 0 50px;
+    border-radius: 30px;
+    transition: 2s;
+}
+
+#readMoreBtn:hover {
+    background-color: #e08e9c;
+    color: #ffffff;
+    transition: 2s;
+}
+
+
+
+#discountPage {
+    height: 265px;
+    background: url('../img/flowersDiscountBackground.png') no-repeat;
+    background-color: #e08e9c;
+}
+
+#discountTitle {
+    font-family: "Ermilov-Bold";
+    font-size: 35pt;
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: #ffffff;
+}
+
+#discountSubtitle {
+    font-family: "OldClassic";
+    font-size: 35pt;
+    text-align: center;
+    color: #ffffff
+}
+
+#ourProductPage {
+    height: auto;
+    background-color: #f0f0f0;
+}
+
+#ourProductTitle {
+    font-family: "Ermilov-Bold";
+    font-size: 35pt;
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: #515151;
+}
+
+#ourProductSubtitle {
+    display: block;
+    position: relative;
+    width: 800px;
+    font-family: "OldClassic";
+    font-size: 35pt;
+    text-align: center;
+    margin: 0px auto 0 auto;
+    color: #515151;
+}
+
+#ourProduct {
+    display: inline-block;
+    margin: 150px 0 0 135px;
+}
+
+.flowerProductCategory {
+    display: inline-block;
+    position: relative;
+    border: 2px #515151 solid;
+    margin: 0 0 100px 0;
+}
+
+.flowersProductImg {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    background-color: #efd0ca;
+
+    border-radius: 50%;
+    box-shadow: 0px 35px 50px 0px rgb(164, 165, 164);
+    object-fit: cover;
+
+
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+
+}
+
+.flowersProductImg img {
+    width: auto;
+    height: 300px;
+    display: block;
+    margin: -50px auto 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.flowerProductCategory h1 {
+    width: 300px;
+    font-family: "Ermilov-Bold";
+    font-size: 15pt;
+    text-align: center;
+    color: #515151;
+    margin: 55px auto 0 auto;
+}
+
+.flowerProductCategory p {
+    width: 350px;
+
+    font-family: "OldClassic";
+    font-size: 20pt;
+    text-align: left;
+    color: #515151;
+    margin: 23px 0 0 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.flowerProductCategory a {
+
+
+
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    background-color: #a3aa68;
+    color: #515151;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0 5px 0px;
+    border-radius: 30px;
+    transition: 2s;
+}
