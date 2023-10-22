@@ -22,7 +22,7 @@ body {
 }
 
 #nav {
-    width: 90%;
+    width: 87%;
     height: 75px;
     display: inline-block;
     background-color: #515151;
@@ -221,7 +221,7 @@ body {
 .flowerProductCategory {
     display: inline-block;
     position: relative;
-    border: 2px #515151 solid;
+
     margin: 0 0 100px 0;
 }
 
@@ -293,4 +293,567 @@ body {
     margin: 30px 0 5px 0px;
     border-radius: 30px;
     transition: 2s;
+}
+
+#aboutUsPage {
+
+    width: auto;
+    height: auto;
+    background-color: #FAD1CB;
+
+}
+
+
+
+#aboutUsBackgroundImg1 {
+    display: block;
+    position: relative;
+    height: 350px;
+    background: url('../img/aboutUsBackground1.jpg') no-repeat;
+    margin-left: 62%;
+    z-index: 1;
+}
+
+#aboutUsBackgroundImg2 {
+    display: block;
+    position: relative;
+    height: 338px;
+    background: url('../img/aboutUsBackground2.jpg') no-repeat;
+    margin: -300px 0 0 0;
+    margin-left: 62%;
+    z-index: 1;
+
+}
+
+#aboutUsPage img {
+    display: inline-block;
+    position: relative;
+    width: 650px;
+
+    border-radius: 10%;
+    margin: -250px 0 75px 60px;
+    z-index: 2;
+
+
+}
+
+#aboutUsPageText {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    left: 15%;
+    transform: translate(-30%, -20%);
+    z-index: 2;
+}
+
+#aboutUsPage h1 {
+    height: 80px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 45pt;
+    color: #515151;
+    left: 15%;
+}
+
+#aboutUsPage p {
+    width: 430px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: left;
+    hyphens: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    left: 12%;
+}
+
+#aboutUsPage a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    background-color: #515151;
+    color: #FAD1CB;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0 5px 50px;
+    border-radius: 30px;
+    left: 25%;
+    transition: 2s;
+}
+
+#aboutUsPage a:hover {
+    background-color: #51515100;
+    color: #515151;
+    transition: 2s;
+}
+
+#assortedBouquetPage {
+    width: auto;
+    height: 902px;
+    background: url('../img/assortedBouquetPage.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+#assortedBouquetText {
+    width: 500px;
+    display: block;
+    position: relative;
+    top: 30%;
+    left: 5%;
+
+}
+
+#assortedBouquetText h1 {
+    height: 80px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 45pt;
+    color: #515151;
+}
+
+#assortedBouquetText p {
+    width: 500px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: left;
+    hyphens: auto;
+
+
+
+}
+
+#assortedBouquetPage a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: #fabdb3;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 50px 0 5px 0;
+    border-radius: 30px;
+    transition: 2s;
+}
+
+#assortedBouquetPage a:hover {
+    background-color: #515151;
+    transition: 2s;
+}
+
+#happyBirthdayPage {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #FAD1CB;
+}
+
+#happyBirthdayBackgroundImg1 {
+    display: block;
+    position: relative;
+    height: 350px;
+    background: url('../img/aboutUsBackground1.jpg') no-repeat;
+    margin-left: 62%;
+    z-index: 1;
+
+
+}
+
+#happyBirthdayBackgroundImg2 {
+    display: block;
+    position: relative;
+    height: 434px;
+    background: url('../img/aboutUsBackground3.jpg') no-repeat;
+    margin: -330px 0 0 0;
+    margin-left: 62%;
+    z-index: 1;
+
+}
+
+#happyBirthdayBackgroundImg3 {
+    display: block;
+    position: relative;
+    height: 668px;
+    background: url('../img/aboutUsBackground4.png') no-repeat;
+    margin: 200px 0 0 0;
+    margin-left: 5%;
+    z-index: 1;
+
+}
+
+#happyBirthdayBackgroundImg4 {
+    display: block;
+    position: relative;
+    height: 586px;
+    background: url('../img/aboutUsBackground5.jpg') no-repeat;
+    margin: -700px 0 0 0;
+
+    margin-left: 62%;
+    z-index: 1;
+}
+
+#happyBirthdayPage img {
+    display: inline-block;
+    position: relative;
+    width: 650px;
+    border-radius: 10%;
+    margin: -250px 0 75px 60px;
+    z-index: 2;
+
+
+}
+
+/**/
+#happyBirthdayPage h1 {
+    height: 80px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 45pt;
+    color: #515151;
+    left: 15%;
+}
+
+/**/
+#happyBirthdayPage p {
+    width: 430px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: left;
+    hyphens: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    left: 12%;
+}
+
+/**/
+
+#happyBirthdayPage a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    background-color: #515151;
+    color: #FAD1CB;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0 5px 50px;
+    border-radius: 30px;
+    left: 25%;
+    transition: 2s;
+}
+
+#happyBirthdayPage a:hover {
+    background-color: #51515100;
+    color: #515151;
+    transition: 2s;
+}
+
+/**/
+#happyBirthdayPageText {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    left: 15%;
+    transform: translate(-30%, -20%);
+    z-index: 2;
+}
+
+/**/
+#happyBirthdayVideo {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+#happyBirthdayVideo h1 {
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 45pt;
+    color: #515151;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    margin: -709px 0 auto 0;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#happyBirthdayVideo p {
+    max-width: 600px;
+    width: auto;
+
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: center;
+    hyphens: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 70px 0 0px 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+}
+
+
+#happyBirthdayVideo img {
+    max-width: 790px;
+    width: auto;
+    margin: 0 0 50px 0;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -10%);
+    border-radius: 5%;
+}
+
+
+#tulipBouquetPage {
+    width: 100%;
+    height: 881px;
+    background: url('../img/tulipBouquetBackground.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    z-index: 1;
+
+}
+
+
+
+
+#tulipBouquetText {
+    width: 500px;
+    display: block;
+    position: relative;
+    top: 18%;
+    left: 10%;
+
+}
+
+/**/
+#tulipBouquetText h1 {
+    height: 80px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 45pt;
+    color: #515151;
+}
+
+/**/
+#tulipBouquetText p {
+    width: 500px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: left;
+    hyphens: auto;
+
+
+
+}
+
+/**/
+#tulipBouquetText a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    background-color: #515151;
+    color: #FAD1CB;
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0 5px 5px;
+    border-radius: 30px;
+
+    transition: 2s;
+}
+
+/**/
+#tulipBouquetText a:hover {
+    background-color: #51515100;
+    color: #515151;
+    transition: 2s;
+}
+
+/**/
+
+
+
+
+#subscribePage {
+    width: 100%;
+    height: 902px;
+    background: url('../img/subscribeBackground.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    z-index: 1;
+
+
+}
+
+#formSubscribe {
+    position: relative;
+    max-width: 825px;
+    width: 100%;
+    min-width: 200px;
+    height: 400px;
+
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
+    transform: translate(-30%, 70%);
+}
+
+#formSubscribe h1 {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    font-family: "Ermilov-Bold";
+    font-size: 25pt;
+    text-align: center;
+    hyphens: auto;
+    color: #515151;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+
+}
+
+#subscribePage input,
+#subscribePage textarea {
+
+    display: block;
+    position: relative;
+    border: 1px #bdbdbd solid;
+    margin: 5px 0 5px 0;
+
+
+}
+
+.inputSubscribe {
+    max-width: 825px;
+    width: 100%;
+    height: 50px;
+    padding: 0 0 0 10px;
+}
+
+#userMessage {
+    color: #515151;
+    height: 150px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+}
+
+#formBtn {
+    width: 200px;
+    height: 50px;
+    background-color: #a3aa68;
+    color: #ffffff;
+    font-size: 20pt;
+
+
+
+    border-radius: 30px;
+    left: 50%;
+    right: 50%;
+
+    transform: translate(-50%, 0%);
+    transition: 2s;
+}
+
+#footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #424242;
+}
+
+#footerContainer {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    margin: 170px 0 0 0;
+}
+
+.footerMenuItem {
+    display: inline-block;
+    position: relative;
+    margin: 10px 40px 0 50px;
+    vertical-align: top;
+}
+
+.footerMenuItem h6 {
+    font-family: "Montserrat-Bold";
+    font-size: 25px;
+    margin: 0 0 35px 0;
+}
+
+.footerMenuItem li,
+.footerMenuItem p {
+    margin: 0 0 25px 0;
+}
+
+.footerMenuItem a {
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+
+.footerMenuItem p {
+    display: block;
+    transition: 1s;
+}
+
+
+.footerMenuItem a,
+.footerMenuItem p {
+    width: 350px;
+    font-family: "Montserrat";
+    font-size: 15pt;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
