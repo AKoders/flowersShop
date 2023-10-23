@@ -12,13 +12,24 @@ body {
 }
 
 #header {
-    width: 100%;
     height: 902px;
     background: url('../img/headerBackground.jpg') no-repeat;
+}
+
+#header,
+#assortedBouquetPage,
+#tulipBouquetPage,
+#subscribePage {
+    width: 100%;
     background-size: cover;
     position: relative;
     display: flex;
+}
 
+#subscribePage {
+    height: 902px;
+    background: url('../img/subscribeBackground.jpg') no-repeat;
+    z-index: 1;
 }
 
 #nav {
@@ -32,7 +43,6 @@ body {
 }
 
 .navItem {
-
     display: inline-block;
     position: absolute;
     margin: 0;
@@ -40,18 +50,14 @@ body {
     transform: translate(0, -50%);
 }
 
-
-
 .navItem li {
     height: 75px;
     display: inline-block;
     padding: 0 50px 0 50px;
     transition: 1s;
-
 }
 
 .navItem a {
-
     text-decoration: none;
     font-family: 'Montserrat-Bold';
     font-size: 10pt;
@@ -69,7 +75,6 @@ body {
     height: 75px;
     background-color: #ff040465;
     transition: 1s;
-
 }
 
 #logo {
@@ -81,7 +86,7 @@ body {
 }
 
 #logoSite p {
-    color: aliceblue;
+    color: #ffffff;
     font-size: 20px;
     position: relative;
     top: 50%;
@@ -90,7 +95,6 @@ body {
 
 #logoSite {
     display: inline-block;
-
     width: 150px;
     height: 60px;
     margin: -50px 0 0 2%;
@@ -166,15 +170,14 @@ body {
     transition: 2s;
 }
 
-
-
 #discountPage {
     height: 265px;
     background: url('../img/flowersDiscountBackground.png') no-repeat;
     background-color: #e08e9c;
 }
 
-#discountTitle {
+#discountTitle,
+#ourProductTitle {
     font-family: "Ermilov-Bold";
     font-size: 35pt;
     text-align: center;
@@ -182,7 +185,8 @@ body {
     color: #ffffff;
 }
 
-#discountSubtitle {
+#discountSubtitle,
+#ourProductSubtitle {
     font-family: "OldClassic";
     font-size: 35pt;
     text-align: center;
@@ -195,10 +199,6 @@ body {
 }
 
 #ourProductTitle {
-    font-family: "Ermilov-Bold";
-    font-size: 35pt;
-    text-align: center;
-    padding: 20px 0 0 0;
     color: #515151;
 }
 
@@ -206,9 +206,6 @@ body {
     display: block;
     position: relative;
     width: 800px;
-    font-family: "OldClassic";
-    font-size: 35pt;
-    text-align: center;
     margin: 0px auto 0 auto;
     color: #515151;
 }
@@ -221,7 +218,6 @@ body {
 .flowerProductCategory {
     display: inline-block;
     position: relative;
-
     margin: 0 0 100px 0;
 }
 
@@ -231,17 +227,12 @@ body {
     display: inline-block;
     position: relative;
     background-color: #efd0ca;
-
     border-radius: 50%;
     box-shadow: 0px 35px 50px 0px rgb(164, 165, 164);
     object-fit: cover;
-
-
-
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0);
-
 }
 
 .flowersProductImg img {
@@ -254,7 +245,6 @@ body {
     transform: translate(0, -50%);
 }
 
-
 .flowerProductCategory h1 {
     width: 300px;
     font-family: "Ermilov-Bold";
@@ -266,7 +256,6 @@ body {
 
 .flowerProductCategory p {
     width: 350px;
-
     font-family: "OldClassic";
     font-size: 20pt;
     text-align: left;
@@ -279,65 +268,69 @@ body {
 }
 
 .flowerProductCategory a {
-
-
-
     display: inline-block;
-    width: 200px;
     text-decoration: none;
-    background-color: #a3aa68;
     color: #515151;
-    font-size: 20pt;
     padding: 10px;
     text-align: center;
     margin: 30px 0 5px 0px;
+}
+
+#formBtn {
+    height: 50px;
+    color: #ffffff;
+    border-radius: 30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    transition: 2s;
+}
+
+.flowerProductCategory a,
+#formBtn {
+    width: 200px;
+    background-color: #a3aa68;
+    font-size: 20pt;
     border-radius: 30px;
     transition: 2s;
 }
 
 #aboutUsPage {
-
     width: auto;
     height: auto;
     background-color: #FAD1CB;
-
 }
 
-
-
 #aboutUsBackgroundImg1 {
-    display: block;
-    position: relative;
     height: 350px;
     background: url('../img/aboutUsBackground1.jpg') no-repeat;
-    margin-left: 62%;
-    z-index: 1;
 }
 
 #aboutUsBackgroundImg2 {
-    display: block;
-    position: relative;
     height: 338px;
     background: url('../img/aboutUsBackground2.jpg') no-repeat;
     margin: -300px 0 0 0;
-    margin-left: 62%;
-    z-index: 1;
+}
 
+#aboutUsBackgroundImg1,
+#aboutUsBackgroundImg2 {
+    display: block;
+    position: relative;
+    margin-left: 64%;
+    z-index: 1;
 }
 
 #aboutUsPage img {
     display: inline-block;
     position: relative;
     width: 650px;
-
     border-radius: 10%;
     margin: -250px 0 75px 60px;
     z-index: 2;
-
-
 }
 
-#aboutUsPageText {
+#aboutUsPageText,
+#happyBirthdayPageText {
     display: inline-block;
     position: relative;
     width: 500px;
@@ -346,187 +339,24 @@ body {
     z-index: 2;
 }
 
-#aboutUsPage h1 {
-    height: 80px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 45pt;
-    color: #515151;
-    left: 15%;
-}
-
-#aboutUsPage p {
-    width: 430px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 25pt;
-    color: #515151;
-    text-align: left;
-    hyphens: auto;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    left: 12%;
-}
-
-#aboutUsPage a {
-    display: block;
-    width: 200px;
-    text-decoration: none;
-    background-color: #515151;
-    color: #FAD1CB;
-    font-size: 20pt;
-    padding: 10px;
-    text-align: center;
-    margin: 30px 0 5px 50px;
-    border-radius: 30px;
-    left: 25%;
-    transition: 2s;
-}
-
-#aboutUsPage a:hover {
-    background-color: #51515100;
-    color: #515151;
-    transition: 2s;
-}
-
-#assortedBouquetPage {
-    width: auto;
-    height: 902px;
-    background: url('../img/assortedBouquetPage.jpg') no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-}
-
-#assortedBouquetText {
-    width: 500px;
-    display: block;
-    position: relative;
-    top: 30%;
-    left: 5%;
-
-}
-
-#assortedBouquetText h1 {
-    height: 80px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 45pt;
-    color: #515151;
-}
-
-#assortedBouquetText p {
-    width: 500px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 25pt;
-    color: #515151;
-    text-align: left;
-    hyphens: auto;
-
-
-
-}
-
-#assortedBouquetPage a {
-    display: block;
-    width: 200px;
-    text-decoration: none;
-    color: #fabdb3;
-    font-size: 20pt;
-    padding: 10px;
-    text-align: center;
-    margin: 50px 0 5px 0;
-    border-radius: 30px;
-    transition: 2s;
-}
-
-#assortedBouquetPage a:hover {
-    background-color: #515151;
-    transition: 2s;
-}
-
-#happyBirthdayPage {
-    display: block;
-    position: relative;
-    width: auto;
-    height: auto;
-    background-color: #FAD1CB;
-}
-
-#happyBirthdayBackgroundImg1 {
-    display: block;
-    position: relative;
-    height: 350px;
-    background: url('../img/aboutUsBackground1.jpg') no-repeat;
-    margin-left: 62%;
-    z-index: 1;
-
-
-}
-
-#happyBirthdayBackgroundImg2 {
-    display: block;
-    position: relative;
-    height: 434px;
-    background: url('../img/aboutUsBackground3.jpg') no-repeat;
-    margin: -330px 0 0 0;
-    margin-left: 62%;
-    z-index: 1;
-
-}
-
-#happyBirthdayBackgroundImg3 {
-    display: block;
-    position: relative;
-    height: 668px;
-    background: url('../img/aboutUsBackground4.png') no-repeat;
-    margin: 200px 0 0 0;
-    margin-left: 5%;
-    z-index: 1;
-
-}
-
-#happyBirthdayBackgroundImg4 {
-    display: block;
-    position: relative;
-    height: 586px;
-    background: url('../img/aboutUsBackground5.jpg') no-repeat;
-    margin: -700px 0 0 0;
-
-    margin-left: 62%;
-    z-index: 1;
-}
-
-#happyBirthdayPage img {
-    display: inline-block;
-    position: relative;
-    width: 650px;
-    border-radius: 10%;
-    margin: -250px 0 75px 60px;
-    z-index: 2;
-
-
-}
-
-/**/
+#aboutUsPage h1,
 #happyBirthdayPage h1 {
+    left: 15%;
+}
+
+#aboutUsPage h1,
+#assortedBouquetText h1,
+#happyBirthdayPage h1,
+#tulipBouquetText h1 {
     height: 80px;
     display: block;
     position: relative;
     font-family: "OldClassic";
     font-size: 45pt;
     color: #515151;
-    left: 15%;
 }
 
-/**/
+#aboutUsPage p,
 #happyBirthdayPage p {
     width: 430px;
     display: block;
@@ -543,40 +373,133 @@ body {
     left: 12%;
 }
 
-/**/
+#aboutUsPage a,
+#happyBirthdayPage a,
+#tulipBouquetText a {
+    background-color: #515151;
+    color: #FAD1CB;
+    margin: 30px 0 5px 50px;
+}
 
-#happyBirthdayPage a {
+#tulipBouquetText a {
+    margin: 30px 0 5px 5px;
+}
+
+#assortedBouquetPage a {
+    color: #fabdb3;
+    margin: 50px 0 5px 0;
+}
+
+#aboutUsPage a,
+#assortedBouquetPage a,
+#happyBirthdayPage a,
+#tulipBouquetText a {
     display: block;
     width: 200px;
     text-decoration: none;
-    background-color: #515151;
-    color: #FAD1CB;
     font-size: 20pt;
     padding: 10px;
     text-align: center;
-    margin: 30px 0 5px 50px;
     border-radius: 30px;
-    left: 25%;
     transition: 2s;
 }
 
-#happyBirthdayPage a:hover {
+#aboutUsPage a:hover,
+#happyBirthdayPage a:hover,
+#tulipBouquetText a:hover {
     background-color: #51515100;
     color: #515151;
     transition: 2s;
 }
 
-/**/
-#happyBirthdayPageText {
+#assortedBouquetPage {
+    height: 902px;
+    background: url('../img/assortedBouquetPage.jpg') no-repeat;
+}
+
+#tulipBouquetPage {
+    height: 881px;
+    background: url('../img/tulipBouquetBackground.jpg') no-repeat;
+}
+
+#assortedBouquetText {
+    width: 500px;
+    display: block;
+    position: relative;
+    top: 30%;
+    left: 5%;
+}
+
+#assortedBouquetText p,
+#tulipBouquetText p {
+    width: 500px;
+    display: block;
+    position: relative;
+    font-family: "OldClassic";
+    font-size: 25pt;
+    color: #515151;
+    text-align: left;
+    hyphens: auto;
+}
+
+#assortedBouquetPage a:hover {
+    background-color: #515151;
+    transition: 2s;
+}
+
+#happyBirthdayPage {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #FAD1CB;
+}
+
+#happyBirthdayBackgroundImg1 {
+    height: 350px;
+    background: url('../img/aboutUsBackground1.jpg') no-repeat;
+    margin-left: 64%;
+}
+
+#happyBirthdayBackgroundImg2 {
+    height: 434px;
+    background: url('../img/aboutUsBackground3.jpg') no-repeat;
+    margin: -330px 0 0 0;
+    margin-left: 64%;
+}
+
+#happyBirthdayBackgroundImg3 {
+    height: 668px;
+    background: url('../img/aboutUsBackground4.png') no-repeat;
+    margin: 200px 0 0 0;
+    margin-left: 5%;
+}
+
+#happyBirthdayBackgroundImg4 {
+    height: 586px;
+    background: url('../img/aboutUsBackground5.jpg') no-repeat;
+    margin: -700px 0 0 0;
+    margin-left: 64%;
+}
+
+#happyBirthdayBackgroundImg1,
+#happyBirthdayBackgroundImg2,
+#happyBirthdayBackgroundImg3,
+#happyBirthdayBackgroundImg4 {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#happyBirthdayPage img {
     display: inline-block;
     position: relative;
-    width: 500px;
-    left: 15%;
-    transform: translate(-30%, -20%);
+    width: 650px;
+    border-radius: 10%;
+    margin: -250px 0 75px 60px;
     z-index: 2;
 }
 
-/**/
 #happyBirthdayVideo {
     width: auto;
     height: auto;
@@ -585,46 +508,36 @@ body {
     z-index: 2;
 }
 
-#happyBirthdayVideo h1 {
+#happyBirthdayVideo h1,
+#happyBirthdayVideo p {
     max-width: 600px;
     width: auto;
-    height: auto;
     display: block;
     position: relative;
     font-family: "OldClassic";
-    font-size: 45pt;
     color: #515151;
     left: 50%;
     right: 50%;
     text-align: center;
-    margin: -709px 0 auto 0;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 
-#happyBirthdayVideo p {
-    max-width: 600px;
-    width: auto;
+#happyBirthdayVideo h1 {
+    height: auto;
+    font-size: 45pt;
+    margin: -709px 0 auto 0;
+}
 
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
+#happyBirthdayVideo p {
     font-size: 25pt;
-    color: #515151;
-    text-align: center;
     hyphens: auto;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     margin: 70px 0 0px 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-
-    z-index: 3;
 }
-
 
 #happyBirthdayVideo img {
     max-width: 790px;
@@ -637,94 +550,16 @@ body {
     border-radius: 5%;
 }
 
-
-#tulipBouquetPage {
-    width: 100%;
-    height: 881px;
-    background: url('../img/tulipBouquetBackground.jpg') no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    z-index: 1;
-
-}
-
-
-
-
 #tulipBouquetText {
     width: 500px;
     display: block;
     position: relative;
     top: 18%;
     left: 10%;
-
-}
-
-/**/
-#tulipBouquetText h1 {
-    height: 80px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 45pt;
-    color: #515151;
-}
-
-/**/
-#tulipBouquetText p {
-    width: 500px;
-    display: block;
-    position: relative;
-    font-family: "OldClassic";
-    font-size: 25pt;
-    color: #515151;
-    text-align: left;
-    hyphens: auto;
-
-
-
-}
-
-/**/
-#tulipBouquetText a {
-    display: block;
-    width: 200px;
-    text-decoration: none;
-    background-color: #515151;
-    color: #FAD1CB;
-    font-size: 20pt;
-    padding: 10px;
-    text-align: center;
-    margin: 30px 0 5px 5px;
-    border-radius: 30px;
-
-    transition: 2s;
-}
-
-/**/
-#tulipBouquetText a:hover {
-    background-color: #51515100;
-    color: #515151;
-    transition: 2s;
 }
 
 /**/
 
-
-
-
-#subscribePage {
-    width: 100%;
-    height: 902px;
-    background: url('../img/subscribeBackground.jpg') no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    z-index: 1;
-
-
-}
 
 #formSubscribe {
     position: relative;
@@ -732,7 +567,6 @@ body {
     width: 100%;
     min-width: 200px;
     height: 400px;
-
     left: 50%;
     right: 50%;
     margin-right: -50%;
@@ -752,18 +586,14 @@ body {
     right: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0%);
-
 }
 
 #subscribePage input,
 #subscribePage textarea {
-
     display: block;
     position: relative;
     border: 1px #bdbdbd solid;
     margin: 5px 0 5px 0;
-
-
 }
 
 .inputSubscribe {
@@ -779,23 +609,6 @@ body {
     outline: none;
     resize: none;
     padding: 10px;
-}
-
-#formBtn {
-    width: 200px;
-    height: 50px;
-    background-color: #a3aa68;
-    color: #ffffff;
-    font-size: 20pt;
-
-
-
-    border-radius: 30px;
-    left: 50%;
-    right: 50%;
-
-    transform: translate(-50%, 0%);
-    transition: 2s;
 }
 
 #footer {
@@ -835,6 +648,7 @@ body {
 .footerMenuItem a {
     text-decoration: none;
     display: inline-block;
+    padding: 5px;
     transition: 1s;
 }
 
@@ -842,7 +656,6 @@ body {
     display: block;
     transition: 1s;
 }
-
 
 .footerMenuItem a,
 .footerMenuItem p {
@@ -856,4 +669,11 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.footerMenuItem a:hover{
+    background: rgba(0,0,0,0);
+	color: #FAD1CB;
+	box-shadow: inset 0 0 0 3px #FAD1CB;
+    
 }
