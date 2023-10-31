@@ -181,16 +181,31 @@ body {
     font-family: "Ermilov-Bold";
     font-size: 35pt;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 50px 0 0 0;
     color: #ffffff;
 }
 
 #discountSubtitle,
+#discountTimer,
 #ourProductSubtitle {
     font-family: "OldClassic";
     font-size: 35pt;
     text-align: center;
-    color: #ffffff
+    color: #ffffff;
+
+}
+
+#discountTimer span {
+    font-family: sans-serif;
+
+
+
+    text-align: center;
+    font-size: 30px;
+    transform: translate(60%, 50%);
+
+
+
 }
 
 #ourProductPage {
@@ -212,13 +227,15 @@ body {
 
 #ourProduct {
     display: inline-block;
-    margin: 150px 0 0 135px;
+    margin: 150px 0 0 0px;
+    transform: translate(10%, 0%);
+
 }
 
 .flowerProductCategory {
     display: inline-block;
     position: relative;
-    margin: 0 0 100px 0;
+    margin: 0 50px 100px 0;
 }
 
 .flowersProductImg {
@@ -276,7 +293,7 @@ body {
     margin: 30px 0 5px 0px;
 }
 
-#formBtn {
+#subscribeFormBtn {
     height: 50px;
     color: #ffffff;
     border-radius: 30px;
@@ -287,7 +304,7 @@ body {
 }
 
 .flowerProductCategory a,
-#formBtn {
+#subscribeFormBtn {
     width: 200px;
     background-color: #a3aa68;
     font-size: 20pt;
@@ -669,11 +686,155 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
-.footerMenuItem a:hover{
-    background: rgba(0,0,0,0);
-	color: #FAD1CB;
-	box-shadow: inset 0 0 0 3px #FAD1CB;
+.footerMenuItem a:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #FAD1CB;
+    box-shadow: inset 0 0 0 3px #FAD1CB;
+
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f79688;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #FAD1CB;
+    border-radius: 10px;
+    background-color: #f9f9fd11;
+}
+
+.scrollUp {
+    visibility: hidden;
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    margin: 50px;
+    overflow: auto;
+    background: url('../img/up.png') no-repeat;
+    z-index: 4;
+}
+
+
+/*animation*/
+.element-animation {
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+
+/* modal form*/
+.modal {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: fixed;
+    background-color: #4242425e;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s;
+    z-index: 1000;
+}
+
+#loginModal {
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px #42424291 solid;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+
+}
+
+#logincloseBtn {
+    width: 25px;
+    display: block;
+    position: relative;
+    height: 25px;
+    left: 90%;
+    background: url('../img/close.png') no-repeat;
+
+}
+
+#loginModal form {
     
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#loginModal span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 5px 0 0 0;
+}
+
+#inputLoginForm input {
+    width: 250px;
+    height: 25px;
+    position: relative;
+    display: block;
+    left: 50%;
+    margin-right: -50%;
+    padding: 0 10px;
+    transform: translate(-50%, -50%);
+    border: 1px #bdbdbd solid;
+    margin: 20px 0 5px 0;
+}
+
+#LoginFormBtn {
+    display: flex;
+    width: 260px;
+    margin: 15px 0 0 0;
+}
+
+#LoginFormBtn input {
+    background-color: #f79688;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#LoginFormBtn a {
+    display: block;
+    text-decoration: none;
+    margin: 0px 0 0 20px;
+    padding: 10px;
+
+    color: #424242;
 }

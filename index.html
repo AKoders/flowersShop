@@ -49,16 +49,25 @@
             </div>
         </div>
         <div id="body">
-            <div id="discountPage">
+            <div id="discountPage" class="element-animation">
 
                 <p id="discountTitle">Получите себе скидку</p>
                 <p id="discountSubtitle">при первой покупке.</p>
+                <div class="timer-numbers" id="discountTimer">
+                    <span class="day">18</span>
+                    <span class="hours">18</span>
+                    <span>:</span>
+                    <span class="minutes">20</span>
+                    <span>:</span>
+                    <span class="seconds">11</span>
+                </div>
             </div>
-            <div id="ourProductPage">
+            <div id="ourProductPage" class="element-animation">
                 <div id="ourProductText">
                     <p id="ourProductTitle">Наши товары</p>
                     <p id="ourProductSubtitle">при первой покупке.при первой покупке.при первой покупке.при первой
                         покупке.при первой покупке.</p>
+
                 </div>
                 <div id="ourProduct">
                     <div class="flowerProductCategory">
@@ -93,7 +102,7 @@
                 </div>
             </div>
 
-            <div id="aboutUsPage">
+            <div id="aboutUsPage" class="element-animation">
                 <div id="aboutUsBackgroundImg1"></div>
 
                 <img src="img/masterFloristic.jpg" alt="">
@@ -108,7 +117,7 @@
                 <div id="aboutUsBackgroundImg2"></div>
             </div>
 
-            <div id="assortedBouquetPage">
+            <div id="assortedBouquetPage" class="element-animation">
                 <div lang="ru" id="assortedBouquetText">
                     <h1>Букет ассорти</h1>
                     <p>считается более общим, тогда как word-break предусматривает специальное поведение для
@@ -119,7 +128,7 @@
                 </div>
 
             </div>
-            <div id="happyBirthdayPage">
+            <div id="happyBirthdayPage" class="element-animation">
                 <div id="happyBirthdayBackgroundImg1"></div>
 
 
@@ -173,7 +182,7 @@
                     <img src="img/video.png" alt="">
                 </div>
             </div>
-            <div id="tulipBouquetPage">
+            <div id="tulipBouquetPage" class="element-animation">
                 <div lang="ru" id="tulipBouquetText">
                     <h1>Букет ассорти</h1>
                     <p>считается более общим, тогда как word-break предусматривает специальное поведение для
@@ -184,15 +193,15 @@
                 </div>
             </div>
 
-            <div id="subscribePage">
+            <div id="subscribePage" class="element-animation">
                 <div id="formSubscribe">
                     <h1 lang="ru">Подпишитесь на рассылку,чтобы не потерять наши новые акции</h1>
-                    <form action="/" method="get">
+                    <form action="#" id="subscribeForm">
                         <input class="inputSubscribe" type="text" name="userName" placeholder="Ваше имя">
                         <input class="inputSubscribe" type="text" name="userMail" placeholder="Email">
                         <textarea class="inputSubscribe" id="userMessage" type="text" rows="5" cols="5"
                             name="userMessage" placeholder="Сообщение"></textarea>
-                        <input id="formBtn" type="submit" value="Отправить">
+                        <input id="subscribeFormBtn" type="submit" value="Отправить">
                     </form>
 
                 </div>
@@ -201,7 +210,7 @@
 
         </div>
         <div id="footer">
-            <div id="footerContainer">
+            <div id="footerContainer" class="element-animation">
                 <div class="footerMenuItem">
                     <h6>О нас</h6>
                     <ul>
@@ -210,7 +219,7 @@
                         <li><a href="#">Миссия</a></li>
                         <li><a href="#">Условия и положения</a></li>
                         <li><a href="#">политика конфиденциальности</a></li>
-                        
+
                     </ul>
                 </div>
 
@@ -222,7 +231,7 @@
                         <li><a href="#">Принимаемые меры</a></li>
                         <li><a href="#">рекомендации</a></li>
                         <li><a href="#">Помощь</a></li>
-                        
+
                     </ul>
                 </div>
 
@@ -231,12 +240,58 @@
                     <p>Улица,дом</p>
                     <p>Страна, город, индекс</p>
                     <p>www.yoursite.com</p>
+
                 </div>
+
             </div>
+
+        </div>
+        <div class="scrollUp" title="Вверх"></div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+    <div class="modal">
+        <div id="loginModal">
+            <div id="logincloseBtn" title="закрыть"></div>
+            <span>Вход личный кабинет</span>
+            <form action="#" id="loginForm">
+
+                <div id="inputLoginForm">
+
+                    <input type="text" name="userLogin" required placeholder="Введите логин">
+                    <input type="password" name="userPassword" required placeholder="Введите пароль">
+                </div>
+                <div>
+                    <input type="checkbox" name="saveForm"  id="saveFormCheckBox">
+                    <label for="saveFormCheckBox">Запомнить</label>
+                </div>
+                <div id="LoginFormBtn">
+
+                    <input id="loginAuthBtn" type="submit" value="Войти">
+                    <a href="#">Восстановить пароль</a>
+
+                </div>
+
+            </form>
+
         </div>
     </div>
 
-    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
 </body>
 
 </html>
