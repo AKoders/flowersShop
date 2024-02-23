@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //timer
     /*
-        let endDate = "10/26/2023".split(''),
+        let endDate = "11/08/2023".split(''),
             deadline = '';
 
         for (let i = 0; i < endDate.length; i++) {
@@ -49,8 +49,6 @@ window.addEventListener('DOMContentLoaded', function () {
                     const cases = [2, 0, 1, 1, 1, 2];
                     return `${titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]]}`;
                 }
-                
-                
                
                 let t = getTimerRemaining(deadline);
                 if(t.day==0){
@@ -62,10 +60,6 @@ window.addEventListener('DOMContentLoaded', function () {
                 hours.textContent = `${t.hours}`.padStart(2, '0') + createLabel(t.hours, [' Час', ' Часа', ' Часов']);
                 minutes.textContent = `${t.minutes}`.padStart(2, '0')+ createLabel(t.minutes, [' Минута', ' Минуты', ' Минут']);
                 seconds.textContent = `${t.seconds}`.padStart(2, '0');
-
-                
-                
-
 
                 if (t.total <= 0) {
                     day.textContent = '0';
@@ -134,13 +128,14 @@ window.addEventListener('DOMContentLoaded', function () {
         logincloseBtn = this.document.querySelector('#logincloseBtn'),
         modal = this.document.querySelector('.modal');
 
+
     function loginModalOpen(formName) {
         let form = document.querySelector(`${formName}`),
             input = form.getElementsByTagName('input'),
             saveFormCheckBox = document.getElementById('saveFormCheckBox');
         input[0].value = localStorage.getItem("userLogin");
         input[1].value = localStorage.getItem("userPassword");
-        saveFormCheckBox.checked= JSON.parse(localStorage.getItem("saveFormCheckBox"));
+        saveFormCheckBox.checked = JSON.parse(localStorage.getItem("saveFormCheckBox"));
         modal.style.visibility = 'visible';
         modal.style.opacity = '1';
         document.body.style.overflow = 'hidden';
@@ -152,16 +147,28 @@ window.addEventListener('DOMContentLoaded', function () {
         document.body.style.overflow = '';
     }
 
-    loginBtn[5].addEventListener('click', function (event) {
-        loginModalOpen('#loginForm');
-    });
+    function displaySize() {
+        let numberBtn = 5;
+        if (window.innerWidth < 1024) {
+            numberBtn = 21;
+        } else if (window.innerWidth > 1024) {
+            numberBtn = 5;
+        }
+
+        loginBtn[numberBtn].addEventListener('click', function (event) {
+            event.preventDefault();
+            loginModalOpen('#loginForm');
+        });
+    }
+    displaySize();
+
+    this.window.addEventListener('resize', displaySize, false);
 
     logincloseBtn.addEventListener('click', function () {
         loginModalClose();
     });
 
     //Form
-
     function getForm(className) {
         let message = {
             loading: `Загрузка...`,
@@ -239,14 +246,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
             };
 
-
             for (let i = 0; i < input.length - 1; i++) {
                 input[i].value = '';
             }
         });
 
     }
-
 
     //checkFormLogin
     function saveInfoForm(formName) {
@@ -263,13 +268,9 @@ window.addEventListener('DOMContentLoaded', function () {
             localStorage.removeItem('userLogin');
             localStorage.removeItem('userPassword');
             localStorage.setItem('saveFormCheckBox', false);
-
         }
 
-
     }
-
-
 
     let loginAuthBtn = this.document.querySelector('#loginAuthBtn'),
         subscribeBtn = this.document.querySelector('#subscribeFormBtn');
@@ -283,7 +284,105 @@ window.addEventListener('DOMContentLoaded', function () {
         getForm('#subscribeForm');
     });
 
+    //MobileNav
 
+
+    function openMobileNav() {
+        let mobileMenuOpenBtn = document.querySelector('#mobileMenuOpenBtn'),
+            mobileNavPanel = document.querySelector('.mobileNavPanel');
+
+        mobileNavPanel.style.opacity = 1;
+        mobileNavPanel.style.visibility = 'visible';
+        mobileMenuOpenBtn.style.opacity = 0;
+        mobileMenuOpenBtn.style.transition = ' all 1s';
+        mobileMenuOpenBtn.style.visibility = 'hidden';
+        setTimeout(function () {
+            let mobileMenuCloseBtn = document.querySelector('#mobileMenuCloseBtn');
+            mobileMenuCloseBtn.style.opacity = 1;
+            mobileMenuCloseBtn.style.transition = ' all 1s';
+            mobileMenuCloseBtn.style.visibility = 'visible'
+
+        }, 500);
+
+    }
+
+
+
+    function closeMobileNav() {
+        let mobileNavPanel = document.querySelector('.mobileNavPanel');
+        mobileNavPanel.style.opacity = 0;
+        mobileNavPanel.style.visibility = 'hidden';
+        mobileMenuCloseBtn.style.opacity = 0;
+        mobileMenuCloseBtn.style.transition = ' all 1s';
+        mobileMenuCloseBtn.style.visibility = 'hidden';
+        setTimeout(function () {
+            mobileMenuOpenBtn.style.opacity = 1;
+            mobileMenuOpenBtn.style.transition = ' all 1s';
+            mobileMenuOpenBtn.style.visibility = 'visible';
+        }, 500);
+
+    }
+
+
+
+    mobileMenuOpenBtn.addEventListener('click', function () {
+        openMobileNav();
+    });
+
+    mobileMenuCloseBtn.addEventListener('click', function () {
+        closeMobileNav();
+    });
+
+
+
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY;
+        changeMobileMenuBackColor(scrollPosition);
+    });
+
+
+    function changeMobileMenuBackColor(scrollPosition) {
+        let mobileNav = document.querySelector('.mobileNav'),
+            mobileNavOpenLine = document.querySelectorAll('.mobileNavOpenLine'),
+            mobileNavCloseLine = document.querySelectorAll('.mobileNavCloseLine');
+
+        if (scrollPosition >= 8350) {
+            mobileNav.style.backgroundColor = "#ffffff7e";
+
+            mobileNav.onmouseout = function () {
+                mobileNav.style.backgroundColor = ' #ffffff7e';
+            }
+
+            mobileNav.onmouseover = function () {
+                mobileNav.style.backgroundColor = '#ffffff';
+            }
+
+            for (let i = 0; i < 3; i++) {
+                mobileNavOpenLine[i].style.backgroundColor = "#42424291";
+                mobileNavCloseLine[i].style.backgroundColor = "#42424291";
+            }
+
+
+        } else if (scrollPosition <= 8349) {
+
+            mobileNav.style.backgroundColor = "#4242425e";
+
+            mobileNav.onmouseout = function () {
+                mobileNav.style.backgroundColor = '#4242425e';
+            }
+
+            mobileNav.onmouseover = function () {
+                mobileNav.style.backgroundColor = '#424242';
+            }
+
+            for (let i = 0; i < 3; i++) {
+                mobileNavOpenLine[i].style.backgroundColor = "#ffffff7e";
+                mobileNavCloseLine[i].style.backgroundColor = "#ffffff7e";
+            }
+
+        }
+
+    }
 
 
 

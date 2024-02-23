@@ -1,14 +1,17 @@
 html,
 body {
-    height: 100%;
-
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
-#container {
-    height: 100%;
-    margin: 0 auto;
+* {
+    border: 1px solid #f00;
+}
+
+#content {
+    width: 100%;
     position: relative;
-    display: block;
 }
 
 #header {
@@ -23,7 +26,8 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    display: flex;
+    display: block;
+
 }
 
 #subscribePage {
@@ -34,7 +38,7 @@ body {
 
 #nav {
     width: 87%;
-    height: 75px;
+    height: 8.4%;
     display: inline-block;
     background-color: #515151;
     border-radius: 50px;
@@ -44,16 +48,23 @@ body {
 
 .navItem {
     display: inline-block;
-    position: absolute;
+    position: relative;
     margin: 0;
     top: 50%;
     transform: translate(0, -50%);
 }
 
+.navItem ul {
+    /*min-width: 645px;*/
+    width: 100%;
+    /*max-width: 750px;*/
+    margin: 0 0% 0 0%;
+}
+
 .navItem li {
     height: 75px;
     display: inline-block;
-    padding: 0 50px 0 50px;
+    padding: 0 3.5% 0 3.9%;
     transition: 1s;
 }
 
@@ -79,7 +90,7 @@ body {
 
 #logo {
     display: inline-block;
-    margin: 0 10px 0 70px;
+    margin: 0 20px 0 40px;
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
@@ -101,31 +112,31 @@ body {
 }
 
 #headerDesriptionText {
-    margin: 185px 0 0 5%;
+    /*margin: 185px 0 0 5%;*/
 }
 
 #headerTitleText h1 {
     font-family: "Ermilov-Bold";
     color: #515151;
-    font-size: 45pt;
+    /*font-size: 45pt;*/
 }
 
 #headerTitleText p {
     font-family: "OldClassic";
     color: #515151;
-    font-size: 30pt;
-    margin: 45px 0 0 0;
+    /* font-size: 30pt;
+    margin: 45px 0 0 0;*/
 }
 
 #headerbodyText {
-    width: 600px;
+    /*width: 600px;*/
     margin: 30px 0 0 0;
 }
 
 #headerbodyText p {
-    text-align: left;
+    /* text-align: left;*/
     color: #515151;
-    font-size: 30pt;
+    /*  font-size: 30pt;*/
 }
 
 #articleBtn {
@@ -159,7 +170,7 @@ body {
     font-size: 20pt;
     padding: 10px;
     text-align: center;
-    margin: 0 0 0 50px;
+    /* margin: 0 0 0 50px;*/
     border-radius: 30px;
     transition: 2s;
 }
@@ -171,6 +182,7 @@ body {
 }
 
 #discountPage {
+    width: 100%;
     height: 265px;
     background: url('../img/flowersDiscountBackground.png') no-repeat;
     background-color: #e08e9c;
@@ -192,20 +204,14 @@ body {
     font-size: 35pt;
     text-align: center;
     color: #ffffff;
-
+    width: auto;
 }
 
 #discountTimer span {
     font-family: sans-serif;
-
-
-
     text-align: center;
     font-size: 30px;
     transform: translate(60%, 50%);
-
-
-
 }
 
 #ourProductPage {
@@ -220,16 +226,15 @@ body {
 #ourProductSubtitle {
     display: block;
     position: relative;
-    width: 800px;
+    /*width: 800px;*/
     margin: 0px auto 0 auto;
     color: #515151;
 }
 
 #ourProduct {
     display: inline-block;
-    margin: 150px 0 0 0px;
-    transform: translate(10%, 0%);
-
+    /* margin: 150px 0 0 100px;*/
+    /*  transform: translate(10%, 0%);*/
 }
 
 .flowerProductCategory {
@@ -239,8 +244,8 @@ body {
 }
 
 .flowersProductImg {
-    width: 300px;
-    height: 300px;
+    /*width: 300px;*/
+    /*height: 300px;*/
     display: inline-block;
     position: relative;
     background-color: #efd0ca;
@@ -253,8 +258,8 @@ body {
 }
 
 .flowersProductImg img {
-    width: auto;
-    height: 300px;
+    /*width: auto;*/
+    /*height: 300px;*/
     display: block;
     margin: -50px auto 0 auto;
     position: relative;
@@ -272,16 +277,23 @@ body {
 }
 
 .flowerProductCategory p {
-    width: 350px;
+    /*width: 350px;*/
     font-family: "OldClassic";
     font-size: 20pt;
-    text-align: left;
+    /* text-align: left;*/
     color: #515151;
-    margin: 23px 0 0 0;
+    /* margin: 23px 0 0 0;*/
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+#flowerProductCategoryBtn {
+    display: flex;
+    justify-content: center;
+    /*Центрирование по горизонтали*/
+
 }
 
 .flowerProductCategory a {
@@ -290,7 +302,7 @@ body {
     color: #515151;
     padding: 10px;
     text-align: center;
-    margin: 30px 0 5px 0px;
+    /* margin: 30px 0 5px 0px;*/
 }
 
 #subscribeFormBtn {
@@ -313,7 +325,7 @@ body {
 }
 
 #aboutUsPage {
-    width: auto;
+    max-width: 100%;
     height: auto;
     background-color: #FAD1CB;
 }
@@ -350,32 +362,35 @@ body {
 #happyBirthdayPageText {
     display: inline-block;
     position: relative;
-    width: 500px;
+    /*width: 100%;
     left: 15%;
-    transform: translate(-30%, -20%);
+    transform: translate(-30%, -20%);*/
     z-index: 2;
 }
 
-#aboutUsPage h1,
-#happyBirthdayPage h1 {
+/*#aboutUsPage h1,
+#happyBirthdayPage h1
+    {
     left: 15%;
-}
+}*/
 
 #aboutUsPage h1,
 #assortedBouquetText h1,
 #happyBirthdayPage h1,
 #tulipBouquetText h1 {
+    /* width: 430px;*/
     height: 80px;
     display: block;
     position: relative;
     font-family: "OldClassic";
-    font-size: 45pt;
+    /* font-size: 45pt;*/
     color: #515151;
 }
 
 #aboutUsPage p,
 #happyBirthdayPage p {
-    width: 430px;
+    width: 90%;
+    /* width: 430px;*/
     display: block;
     position: relative;
     font-family: "OldClassic";
@@ -399,7 +414,7 @@ body {
 }
 
 #tulipBouquetText a {
-    margin: 30px 0 5px 5px;
+    /* margin: 30px 0 5px 5px;*/
 }
 
 #assortedBouquetPage a {
@@ -435,27 +450,28 @@ body {
 }
 
 #tulipBouquetPage {
+    width: 100%;
     height: 881px;
     background: url('../img/tulipBouquetBackground.jpg') no-repeat;
 }
 
 #assortedBouquetText {
-    width: 500px;
+    /* width: 500px;*/
     display: block;
     position: relative;
-    top: 30%;
-    left: 5%;
+    /* top: 30%;*/
+    /*left: 5%;*/
 }
 
 #assortedBouquetText p,
 #tulipBouquetText p {
-    width: 500px;
+    /*width: 500px;*/
     display: block;
     position: relative;
     font-family: "OldClassic";
-    font-size: 25pt;
+    /*font-size: 25pt;*/
     color: #515151;
-    text-align: left;
+    /* text-align: left;*/
     hyphens: auto;
 }
 
@@ -467,7 +483,7 @@ body {
 #happyBirthdayPage {
     display: block;
     position: relative;
-    width: auto;
+    max-width: 1440px;
     height: auto;
     background-color: #FAD1CB;
 }
@@ -493,9 +509,10 @@ body {
 }
 
 #happyBirthdayBackgroundImg4 {
-    height: 586px;
+    height: 566px;
     background: url('../img/aboutUsBackground5.jpg') no-repeat;
-    margin: -700px 0 0 0;
+    background-size: 400px;
+    margin: -800px 0 0 0;
     margin-left: 64%;
 }
 
@@ -518,7 +535,7 @@ body {
 }
 
 #happyBirthdayVideo {
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     position: relative;
@@ -527,48 +544,48 @@ body {
 
 #happyBirthdayVideo h1,
 #happyBirthdayVideo p {
-    max-width: 600px;
-    width: auto;
+    /*max-width: 600px;
+    width: auto;*/
     display: block;
     position: relative;
     font-family: "OldClassic";
     color: #515151;
-    left: 50%;
-    right: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
+    /*left: 50%;
+    right: 50%;*/
+    /*text-align: center;*/
+    /*transform: translate(-50%, -50%);*/
     z-index: 3;
 }
 
-#happyBirthdayVideo h1 {
+/*#happyBirthdayVideo h1 {
     height: auto;
     font-size: 45pt;
     margin: -709px 0 auto 0;
-}
+}*/
 
 #happyBirthdayVideo p {
-    font-size: 25pt;
+    /*font-size: 25pt;*/
     hyphens: auto;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    margin: 70px 0 0px 0;
+    /*margin: 70px 0 0px 0;*/
 }
 
 #happyBirthdayVideo img {
-    max-width: 790px;
-    width: auto;
-    margin: 0 0 50px 0;
-    left: 50%;
-    right: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -10%);
+    /*max-width: 790px;
+    width: auto;*/
+    /* margin: 0 0 50px 0;*/
+    /*left: 50%;*/
+    /*right: 50%;*/
+    /*margin-right: -50%;*/
+    /*transform: translate(-50%, -10%);*/
     border-radius: 5%;
 }
 
 #tulipBouquetText {
-    width: 500px;
+    width: 100%;
     display: block;
     position: relative;
     top: 18%;
@@ -577,17 +594,16 @@ body {
 
 /**/
 
-
 #formSubscribe {
     position: relative;
-    max-width: 825px;
-    width: 100%;
+    max-width: 650px;
+    width: 650px;
     min-width: 200px;
-    height: 400px;
-    left: 50%;
+    height: 420px;
+    /* left: 50%;
     right: 50%;
     margin-right: -50%;
-    transform: translate(-30%, 70%);
+    transform: translate(-40%, 70%);*/
 }
 
 #formSubscribe h1 {
@@ -614,8 +630,8 @@ body {
 }
 
 .inputSubscribe {
-    max-width: 825px;
-    width: 100%;
+    /*  max-width: 700px;
+    min-width: 600px;*/
     height: 50px;
     padding: 0 0 0 10px;
 }
@@ -717,18 +733,20 @@ body {
     visibility: hidden;
     position: fixed;
     right: 0px;
-    bottom: 20px;
-    cursor: pointer;
-    width: 65px;
-    height: 65px;
+    /*  bottom: 20px;*/
     opacity: 0;
     transition: opacity 1s ease-in;
-    margin: 50px;
+    /*margin: 50px;*/
     overflow: auto;
     background: url('../img/up.png') no-repeat;
     z-index: 4;
-}
 
+   /* right: 0px;
+    bottom: -10px;
+    width: 65px;
+    height: 65px;
+    margin: 40px;*/
+}
 
 /*animation*/
 .element-animation {
@@ -743,9 +761,9 @@ body {
     transform: translateY(0%);
 }
 
-
 /* modal form*/
-.modal {
+.modal,
+.mobileNavPanel {
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -761,14 +779,13 @@ body {
 }
 
 #loginModal {
-
     position: relative;
-    width: 300px;
+    width: 90%;
     height: 300px;
     background-color: #ffffff;
     border: 2px #42424291 solid;
     border-radius: 25px;
-    top: 50%;
+    top: 35%;
     left: 50%;
     margin-right: -50%;
     padding: 10px;
@@ -787,7 +804,6 @@ body {
 }
 
 #loginModal form {
-    
     height: 150px;
     position: absolute;
     top: 50%;
@@ -835,6 +851,1108 @@ body {
     text-decoration: none;
     margin: 0px 0 0 20px;
     padding: 10px;
-
     color: #424242;
 }
+
+/**/
+.mobileNav {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    background-color: #4242425e;
+    border-radius: 50%;
+    opacity: 1;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s;
+    z-index: 1001;
+    object-fit: cover;
+}
+
+.mobileNav:hover {
+    background-color: #424242;
+}
+
+#mobileMenuOpenBtn,
+#mobileMenuCloseBtn {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#mobileMenuCloseBtn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobileNavOpenLine {
+    width: 60px;
+    height: 20px;
+    background: #ffffff7e;
+    display: block;
+    border-radius: 25px;
+    top: -50%;
+    left: 50%;
+    margin-right: -50%;
+    margin: 0 0 8px 0;
+    transform: translate(50%, 100%);
+}
+
+.mobileNavCloseLine {
+    width: 100px;
+    height: 20px;
+    background: #ffffff7e;
+    display: block;
+    position: relative;
+    border-radius: 25px;
+    margin: 0 0 -20px 0;
+    top: -60%;
+    left: 8%;
+    margin-right: -50%;
+}
+
+#mobileNavCloseLine1 {
+    rotate: 45deg;
+}
+
+#mobileNavCloseLine2 {
+    rotate: -45deg;
+}
+
+#mobileNavPage {
+    width: 90%;
+    height: auto;
+    display: block;
+    position: relative;
+    background: #f9f9fd;
+    border: 2px #42424291 solid;
+    border-radius: 25px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+#mobileNavPage li {
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+#mobileNavPage a {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat-Bold";
+    color: #424242;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#mobileNavPage a:hover {
+    background-color: #ff040465;
+    color: #f9f9fd;
+    transition: 1s;
+}
+
+/* Здесь будут все стили для устройств с viewport меньше 770 пикселей. */
+
+@media (min-width: 360px) {
+    /*
+    Стили для устройств, у которых ширина viewport больше или равно 360 пикселей
+    */
+
+    /*ШАПКА САЙТА*/
+
+    #nav {
+        visibility: hidden;
+    }
+
+    .navItem ul {
+        width: 100%;
+    }
+
+    .scrollUp {
+        right: 0px;
+        bottom: -10px;
+        width: 65px;
+        height: 65px;
+        margin: 40px;
+    }
+
+    #headerDesriptionText {
+        margin: 185px 0 0 0;
+        text-align: center;
+    }
+
+    #headerTitleText h1 {
+        font-size: 30pt;
+    }
+
+    #headerTitleText p {
+        font-size: 20pt;
+    }
+
+    #headerbodyText {
+        width: 100%;
+    }
+
+    #headerbodyText p {
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    #readMoreBtn {
+        margin: 5px 0 0 0;
+    }
+
+    /*НАШИ ТОВАРЫ*/
+
+    #discountTitle,
+    #ourProductTitle {
+        font-size: 30pt;
+    }
+
+    #ourProductSubtitle {
+        width: 100%;
+        font-size: 20pt;
+    }
+
+    #ourProduct {
+        width: 100%;
+        margin: 100px 0 0 0px;
+    }
+
+    .flowersProductImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flowersProductImg img {
+        width: auto;
+        height: 200px;
+    }
+
+    .flowerProductCategory p {
+        width: 100%;
+        text-align: center;
+        margin: 23px 0 0 5px;
+    }
+
+    .flowerProductCategory a {
+        margin: 30px 22% 0 22%;
+    }
+
+    /*О НАС*/
+
+    #aboutUsPage img {
+        width: 85%;
+        margin: -250px 0px 20px 30px;
+    }
+
+    #aboutUsPageText {
+        width: 100%;
+        height: auto;
+    }
+
+    #aboutUsPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #aboutUsPage p {
+        width: 80%;
+        font-size: 20pt;
+        left: 10%;
+    }
+
+    #aboutUsPage a {
+        margin: auto;
+    }
+
+    /*БУКЕТ АССОРТИ*/
+
+    #assortedBouquetText {
+        width: 100%;
+        top: 10%;
+        left: 0;
+    }
+
+    #assortedBouquetText h1 {
+        width: 100%;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #assortedBouquetText p {
+        width: 90%;
+        font-size: 20pt;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+
+    #assortedBouquetPage a {
+        margin: auto;
+    }
+
+    /*ДЕНЬ РОЖДЕНИЯ*/
+
+    #happyBirthdayPage {
+        width: 100%;
+        height: auto;
+    }
+
+    #happyBirthdayPage img {
+        width: 85%;
+        margin: -250px 0px 20px 30px;
+    }
+
+    #happyBirthdayPageText {
+        width: 100%;
+        height: auto;
+    }
+
+    #happyBirthdayPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+
+    #happyBirthdayPage p {
+        width: 80%;
+        font-size: 20pt;
+        left: 10%;
+    }
+
+    #happyBirthdayPage a {
+        margin: auto;
+    }
+
+    #happyBirthdayVideo h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 28pt;
+        text-align: center;
+        margin: -715px 0 0px 0;
+    }
+
+    #happyBirthdayVideo p {
+        width: 80%;
+        font-size: 20pt;
+        left: 10%;
+        margin: 0px 0 50px 0;
+    }
+
+    #happyBirthdayVideo img {
+        width: 85%;
+        margin: -50px 0 50px 30px;
+    }
+
+    /*БУКЕТ ТУЛЬПАНОВ*/
+    #tulipBouquetText {
+        left: 0;
+    }
+
+    #tulipBouquetText h1 {
+        width: 100%;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #tulipBouquetText p {
+        width: 90%;
+        font-size: 20pt;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+
+    #tulipBouquetText a {
+        margin: auto;
+    }
+
+    /*ПОДПИСКА*/
+    #formSubscribe {
+        height: auto;
+        width: 100%;
+        background: #bdbdbd88;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    #formSubscribe h1 {
+        width: 98%;
+        font-size: 25pt;
+        text-align: left;
+        /* left: 50%;*/
+        /*  right: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0%);*/
+    }
+
+    .inputSubscribe {
+        width: 100%;
+    }
+
+    /*ПОДВАЛ*/
+
+    #footerContainer {
+        width: 90%;
+        margin: 50px 0 0 0;
+    }
+
+    .footerMenuItem a,
+    .footerMenuItem p {
+        width: 100%;
+        font-size: 15pt;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 768px) {
+    /*ШАПКА САЙТА*/
+
+    .scrollUp {
+        right: 0px;
+        bottom: -10px;
+        width: 65px;
+        height: 65px;
+        margin: 45px;
+    }
+
+    #headerDesriptionText {
+        margin: 185px 0 0 0;
+        text-align: center;
+    }
+
+    #headerTitleText h1 {
+        font-size: 35pt;
+    }
+
+    #headerTitleText p {
+        font-size: 25pt;
+        margin: 0 0 0 0;
+    }
+
+    #headerbodyText {
+        width: 100%;
+    }
+
+    #headerbodyText p {
+        font-size: 25pt;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+
+    #readMoreBtn {
+        margin: 5px 0 0 0;
+    }
+
+    /*НАШИ ТОВАРЫ*/
+
+    #discountTitle,
+    #ourProductTitle {
+        font-size: 30pt;
+    }
+
+    #ourProductSubtitle {
+        width: 80%;
+        font-size: 25pt;
+    }
+
+    #ourProduct {
+        width: 100%;
+        margin: 100px 0 0 0px;
+    }
+
+    .flowersProductImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flowersProductImg img {
+        width: auto;
+        height: 200px;
+    }
+
+    .flowerProductCategory p {
+        width: 80%;
+        text-align: center;
+        margin: 23px auto 0 auto;
+    }
+
+    .flowerProductCategory a {
+        margin: 30px 35% 0 35%;
+    }
+
+    /*О НАС*/
+
+    #aboutUsPage img {
+        width: 60%;
+        margin: -250px 20% 20px 20%;
+    }
+
+    #aboutUsPageText {
+        width: 100%;
+        height: auto;
+    }
+
+    #aboutUsPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #aboutUsPage p {
+        width: 80%;
+        font-size: 25pt;
+        left: 10%;
+    }
+
+    #aboutUsPage a {
+        margin: auto;
+    }
+
+    /*БУКЕТ АССОРТИ*/
+
+    #assortedBouquetText {
+        width: 100%;
+        top: 10%;
+        left: 0;
+    }
+
+    #assortedBouquetText h1 {
+        width: 99%;
+        font-size: 35pt;
+    }
+
+    #assortedBouquetText p {
+        width: 70%;
+        font-size: 25pt;
+        text-align: center;
+    }
+
+    #assortedBouquetPage a {
+        margin: auto;
+    }
+
+    /*ДЕНЬ РОЖДЕНИЯ*/
+
+    #happyBirthdayPage {
+        width: 100%;
+        height: auto;
+    }
+
+    #happyBirthdayPage img {
+        width: 60%;
+        margin: -250px 20% 20px 20%;
+    }
+
+    #happyBirthdayPageText {
+        width: 100%;
+        height: auto;
+    }
+
+    #happyBirthdayPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #happyBirthdayPage p {
+        width: 80%;
+        font-size: 25pt;
+        left: 10%;
+    }
+
+    #happyBirthdayPage a {
+        margin: auto;
+    }
+
+    #happyBirthdayVideo h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+        margin: -750px 0 5px 0;
+    }
+
+    #happyBirthdayVideo p {
+        width: 80%;
+        font-size: 25pt;
+    }
+
+    #happyBirthdayVideo img {
+        width: 60%;
+        margin: -50px 20% 50px 20%;
+    }
+
+    /*БУКЕТ ТУЛЬПАНОВ*/
+    #tulipBouquetText {
+        left: 0;
+    }
+
+    #tulipBouquetText h1 {
+        width: 100%;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #tulipBouquetText p {
+        width: 90%;
+        font-size: 25pt;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+
+    #tulipBouquetText a {
+        margin: auto;
+    }
+
+    /*ПОДПИСКА*/
+    #formSubscribe {
+        height: auto;
+        width: 100%;
+        background: #bdbdbd88;
+        padding: 20px;
+        border-radius: 25px;
+        margin: 0 auto 0 auto;
+    }
+
+    #formSubscribe h1 {
+        width: 98%;
+        font-size: 25pt;
+        text-align: left;
+    }
+
+    .inputSubscribe {
+        width: 100%;
+    }
+
+    /*ПОДВАЛ*/
+
+    #footerContainer {
+        width: 100%;
+    }
+
+    .footerMenuItem {
+        margin: 0 auto 0 auto;
+    }
+
+    .footerMenuItem a,
+    .footerMenuItem p {
+        width: 100%;
+        font-size: 13.3pt;
+        text-align: left;
+    }
+
+    #mobileNavPage {
+        width: 60%;
+    }
+
+    #loginModal {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*
+    Стили для устройств, у которых ширина viewport
+    больше или равно 990 пикселей, но меньше 1400 пикселей.
+    */
+
+    .mobileNav {
+        visibility: hidden;
+    }
+
+    #nav {
+        visibility: visible;
+    }
+
+    .navItem {
+        width: 70%;
+        margin: 0;
+        transform: translate(-3.5%, -50%);
+    }
+
+    #formSubscribe {
+        background: #ffffff00;
+    }
+
+    .scrollUp {
+        right: 0px;
+        bottom: -10px;
+        width: 65px;
+        height: 65px;
+        margin: 45px;
+    }
+
+    #header {
+        background-position-x: 70%;
+    }
+
+    #headerDesriptionText {
+        margin: 185px 0 0 0;
+        text-align: justify;
+    }
+
+    #headerTitleText h1 {
+        font-size: 35pt;
+        padding: 0 10% 0 10%;
+    }
+
+    #headerTitleText p {
+        font-size: 25pt;
+        padding: 0 10% 0 10%;
+    }
+
+    #headerbodyText {
+        width: 100%;
+    }
+
+    #headerbodyText p {
+        font-size: 25pt;
+        width: 100%;
+        text-align: justify;
+        padding: 0 50% 0 10%;
+    }
+
+    #articleBtn {
+        padding: 0px 0px 0 10%;
+    }
+
+    #purchase {
+        margin: 0 2% 0 0;
+    }
+
+    /*НАШИ ТОВАРЫ*/
+
+    #discountTitle,
+    #ourProductTitle {
+        font-size: 30pt;
+    }
+
+    #ourProductSubtitle {
+        width: 60%;
+        font-size: 25pt;
+    }
+
+    #ourProduct {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+
+    .flowersProductImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flowersProductImg img {
+        width: auto;
+        height: 200px;
+    }
+
+    .flowerProductCategory {
+        width: 30%;
+        margin: 0 auto 100px 2%;
+    }
+
+    .flowerProductCategory h1 {
+        width: 90%;
+        font-size: 15pt;
+        margin: 55px auto 0 auto;
+    }
+
+    .flowerProductCategory p {
+        width: 100%;
+        text-align: center;
+        margin: 23px 0 0 0;
+    }
+
+    .flowerProductCategory a {
+        margin: auto;
+    }
+
+    /*О НАС*/
+
+    #aboutUsPage img {
+        width: 55%;
+        margin: -250px 1% 20px 1%;
+    }
+
+    #aboutUsPageText {
+        width: 40%;
+        height: auto;
+        left: 12%;
+        transform: translate(-30%, -30%);
+    }
+
+    #aboutUsPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 30pt;
+        text-align: center;
+    }
+
+    #aboutUsPage p {
+        width: 100%;
+        font-size: 20pt;
+        left: 0%;
+    }
+
+    #aboutUsPage a {
+        margin: auto;
+    }
+
+    /*БУКЕТ АССОРТИ*/
+
+    #assortedBouquetPage {
+        background-position-x: 45%;
+    }
+
+    #assortedBouquetText {
+        width: 38%;
+        top: 25%;
+        left: 3%;
+        right: 0%;
+    }
+
+    #assortedBouquetText h1 {
+        width: 100%;
+        font-size: 35pt;
+    }
+
+    #assortedBouquetText p {
+        width: 100%;
+        font-size: 20pt;
+        text-align: justify;
+    }
+
+
+    #assortedBouquetPage a {
+        margin: 0% 0 0 1%;
+    }
+
+    /*ДЕНЬ РОЖДЕНИЯ*/
+
+    #happyBirthdayPage {
+        width: 100%;
+        height: auto;
+    }
+
+    #happyBirthdayPage img {
+        width: 55%;
+        margin: -250px 0% 20px 1%;
+    }
+
+    #happyBirthdayPageText {
+        width: 40%;
+        height: auto;
+        left: 13%;
+        transform: translate(-30%, -30%);
+    }
+
+    #happyBirthdayPage h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #happyBirthdayPage p {
+        width: 100%;
+        font-size: 20pt;
+        left: 0;
+    }
+
+    #happyBirthdayPage a {
+        margin: auto;
+    }
+
+    #happyBirthdayVideo h1 {
+        width: 100%;
+        height: 80px;
+        font-size: 35pt;
+        text-align: center;
+        margin: -750px 0 5px 0;
+    }
+
+    #happyBirthdayVideo p {
+        width: 55%;
+        font-size: 25pt;
+        text-align: justify;
+        margin: auto;
+    }
+
+    #happyBirthdayVideo img {
+        width: 60%;
+        margin: 40px 20% 50px 20%;
+    }
+
+
+    /*БУКЕТ ТУЛЬПАНОВ*/
+    #tulipBouquetPage {
+        background-position-x: 70%;
+    }
+
+    #tulipBouquetText {
+        width: 60%;
+        top: 30%;
+        left: 5%;
+        right: 0%;
+    }
+
+
+    #tulipBouquetText h1 {
+        width: 100%;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    #tulipBouquetText p {
+        width: 100%;
+        font-size: 20pt;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+
+    #tulipBouquetText a {
+        margin: 0% 0 0 2%;
+    }
+
+    /*ПОДПИСКА*/
+    #formSubscribe {
+        margin: 0% 0 0 36%;
+        top: 30%;
+    }
+
+    #formSubscribe {
+        width: 60%;
+    }
+
+    #formSubscribe h1 {
+        width: 100%;
+        font-size: 20pt;
+        text-align: justify;
+    }
+
+    .inputSubscribe {
+        width: 100%;
+    }
+
+    #subscribeFormBtn {
+        left: 20%;
+        right: 0%;
+    }
+
+    /*ПОДВАЛ*/
+
+    #footerContainer {
+        width: 100%;
+    }
+
+    .footerMenuItem {
+        margin: 0 3% 0 3%;
+    }
+
+    .footerMenuItem a,
+    .footerMenuItem p {
+        width: 100%;
+        font-size: 15pt;
+        text-align: left;
+    }
+
+    #loginModal {
+        width: 50%;
+        top: 50%;
+    }
+
+}
+
+
+@media (min-width: 1366px) {
+
+    .navItem {
+        width: 80%;
+    }
+
+    #header {
+        background-position-x: 100%;
+    }
+
+    #headerbodyText p {
+        font-size: 20pt;
+    }
+
+    /*О НАС*/
+
+    #aboutUsPage img {
+        width: 40%;
+        margin: -250px 5% 20px 5%;
+    }
+
+    #aboutUsPage a {
+        margin: auto;
+    }
+
+    /*БУКЕТ АССОРТИ*/
+
+    #assortedBouquetPage {
+        background-position-x: 50%;
+    }
+
+    #assortedBouquetText {
+        top: 28%;
+    }
+
+    /*ДЕНЬ РОЖДЕНИЯ*/
+
+    #happyBirthdayPage img {
+        width: 40%;
+        margin: -250px 0% 20px 5%;
+    }
+
+    #happyBirthdayPageText {
+        left: 15%;
+        transform: translate(-30%, -25%);
+    }
+
+    #happyBirthdayVideo h1 {
+        font-size: 30pt;
+    }
+
+    #happyBirthdayVideo p {
+        font-size: 20pt;
+    }
+
+    #happyBirthdayVideo img {
+        width: 40%;
+        margin: 40px 30% 50px 30%;
+    }
+
+    /*БУКЕТ ТУЛЬПАНОВ*/
+    #tulipBouquetPage {
+        background-position-x: 100%;
+    }
+
+    #tulipBouquetText {
+        width: 50%;
+        top: 30%;
+        left: 10%;
+    }
+
+    #tulipBouquetText h1 {
+        font-size: 30pt;
+    }
+
+    #tulipBouquetText p {
+        font-size: 20pt;
+        text-align: justify;
+    }
+
+    #tulipBouquetText a {
+        margin: 0% 0 0 2%;
+    }
+
+    /*ПОДПИСКА*/
+    #formSubscribe {
+        margin: 0% 0 0 30%;
+    }
+
+    #formSubscribe h1 {
+        width: 100%;
+        font-size: 20pt;
+    }
+
+    /*ПОДВАЛ*/
+
+    #footerContainer {
+        width: 100%;
+    }
+
+    .footerMenuItem {
+        margin: 0 5% 0 5%;
+        left: 2%;
+    }
+
+    #loginModal {
+        width: 30%;
+        top: 50%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    /*
+    Стили для устройств, у которых ширина viewport
+    больше или равно 1400 пикселей
+    */
+
+    /*О НАС*/
+
+    #aboutUsPage img {
+        width: 35%;
+        margin: -180px 5% 20px 5%;
+    }
+
+    /*ДЕНЬ РОЖДЕНИЯ*/
+
+    #happyBirthdayPage img {
+        width: 35%;
+        margin: -250px 0% 20px 5%;
+    }
+
+    #happyBirthdayPageText {
+        left: 15%;
+        transform: translate(-30%, -25%);
+    }
+
+    #happyBirthdayVideo h1 {
+        font-size: 30pt;
+    }
+
+    #happyBirthdayVideo p {
+        font-size: 20pt;
+    }
+
+    #happyBirthdayVideo img {
+        width: 35%;
+        margin: 40px 32% 50px 32%;
+    }
+
+    /*ПОДВАЛ*/
+
+    #footerContainer {
+        width: 100%;
+    }
+
+    .footerMenuItem {
+        margin: 0 6% 0 6%;
+        left: 2%;
+    }
+
+    #loginModal {
+        width: 30%;
+        top: 50%;
+    }
+
+}
+
+
+
+
