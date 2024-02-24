@@ -385,7 +385,13 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    //Date create Site
 
+    (function () {
+
+
+        document.querySelector('#copyrightText').innerHTML = '&copy; 2024 - ' + new Date().getFullYear() + ' Верстка сайта &nbsp; <a href="">AKoders</a>. Дизайн взят из сети интернет.';
+    }());
 
 
 
