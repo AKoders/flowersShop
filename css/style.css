@@ -57,9 +57,7 @@ body {
 }
 
 .navItem ul {
-    /*min-width: 645px;*/
     width: 100%;
-    /*max-width: 750px;*/
     margin: 0 0% 0 0%;
 }
 
@@ -120,25 +118,19 @@ body {
 #headerTitleText h1 {
     font-family: "Ermilov-Bold";
     color: #515151;
-    /*font-size: 45pt;*/
 }
 
 #headerTitleText p {
     font-family: "OldClassic";
     color: #515151;
-    /* font-size: 30pt;
-    margin: 45px 0 0 0;*/
 }
 
 #headerbodyText {
-    /*width: 600px;*/
     margin: 30px 0 0 0;
 }
 
 #headerbodyText p {
-    /* text-align: left;*/
     color: #515151;
-    /*  font-size: 30pt;*/
 }
 
 #articleBtn {
@@ -172,7 +164,6 @@ body {
     font-size: 20pt;
     padding: 10px;
     text-align: center;
-    /* margin: 0 0 0 50px;*/
     border-radius: 30px;
     transition: 2s;
 }
@@ -228,15 +219,12 @@ body {
 #ourProductSubtitle {
     display: block;
     position: relative;
-    /*width: 800px;*/
     margin: 0px auto 0 auto;
     color: #515151;
 }
 
 #ourProduct {
     display: inline-block;
-    /* margin: 150px 0 0 100px;*/
-    /*  transform: translate(10%, 0%);*/
 }
 
 .flowerProductCategory {
@@ -246,8 +234,6 @@ body {
 }
 
 .flowersProductImg {
-    /*width: 300px;*/
-    /*height: 300px;*/
     display: inline-block;
     position: relative;
     background-color: #efd0ca;
@@ -260,8 +246,6 @@ body {
 }
 
 .flowersProductImg img {
-    /*width: auto;*/
-    /*height: 300px;*/
     display: block;
     margin: -50px auto 0 auto;
     position: relative;
@@ -279,12 +263,9 @@ body {
 }
 
 .flowerProductCategory p {
-    /*width: 350px;*/
     font-family: "OldClassic";
     font-size: 20pt;
-    /* text-align: left;*/
     color: #515151;
-    /* margin: 23px 0 0 0;*/
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -294,8 +275,6 @@ body {
 #flowerProductCategoryBtn {
     display: flex;
     justify-content: center;
-    /*Центрирование по горизонтали*/
-
 }
 
 .flowerProductCategory a {
@@ -304,7 +283,6 @@ body {
     color: #515151;
     padding: 10px;
     text-align: center;
-    /* margin: 30px 0 5px 0px;*/
 }
 
 #subscribeFormBtn {
@@ -364,35 +342,23 @@ body {
 #happyBirthdayPageText {
     display: inline-block;
     position: relative;
-    /*width: 100%;
-    left: 15%;
-    transform: translate(-30%, -20%);*/
     z-index: 2;
 }
-
-/*#aboutUsPage h1,
-#happyBirthdayPage h1
-    {
-    left: 15%;
-}*/
 
 #aboutUsPage h1,
 #assortedBouquetText h1,
 #happyBirthdayPage h1,
 #tulipBouquetText h1 {
-    /* width: 430px;*/
     height: 80px;
     display: block;
     position: relative;
     font-family: "OldClassic";
-    /* font-size: 45pt;*/
     color: #515151;
 }
 
 #aboutUsPage p,
 #happyBirthdayPage p {
     width: 90%;
-    /* width: 430px;*/
     display: block;
     position: relative;
     font-family: "OldClassic";
@@ -413,10 +379,6 @@ body {
     background-color: #515151;
     color: #FAD1CB;
     margin: 30px 0 5px 50px;
-}
-
-#tulipBouquetText a {
-    /* margin: 30px 0 5px 5px;*/
 }
 
 #assortedBouquetPage a {
@@ -458,22 +420,16 @@ body {
 }
 
 #assortedBouquetText {
-    /* width: 500px;*/
     display: block;
     position: relative;
-    /* top: 30%;*/
-    /*left: 5%;*/
 }
 
 #assortedBouquetText p,
 #tulipBouquetText p {
-    /*width: 500px;*/
     display: block;
     position: relative;
     font-family: "OldClassic";
-    /*font-size: 25pt;*/
     color: #515151;
-    /* text-align: left;*/
     hyphens: auto;
 }
 
@@ -666,7 +622,7 @@ body {
 }
 
 .footerMenuItem a,
-.footerMenuItem p {
+.footerMenuItem p{
     width: 350px;
     font-family: "Montserrat";
     font-size: 15pt;
@@ -678,6 +634,33 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+}
+
+.FooterMenuContactBlock{
+    margin-top: -5%;
+}
+
+.FooterMenuContactBlock li{
+    width: 100%;
+    height: 40px;
+    
+    background: url('../img/phone.png') no-repeat;
+    background-position-x: 20%;
+    background-size: 15%;
+    margin-top: -10%;
+    
+}
+
+.FooterMenuContactBlock p{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 40px;
+    font-family: "Montserrat";
+    font-size: 13pt;
+    color: #ffffff;
+    text-align: right;
+    top: 70%;
 }
 
 .footerMenuItem a:hover {
@@ -731,7 +714,9 @@ body {
     transition: opacity 1s ease-in;
     overflow: auto;
     background: url('../img/up.png') no-repeat;
+    cursor: pointer;
     z-index: 4;
+   
 }
 
 /*animation*/
